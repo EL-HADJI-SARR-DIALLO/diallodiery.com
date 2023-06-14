@@ -1,0 +1,139 @@
+
+html{
+	scroll-behavior: smooth;
+}
+
+body{
+	margin: 0;
+	padding: 0;
+	font-family: 'Montserrat', sans-serif;
+}
+nav{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
+	border-bottom: 5px solid #6f6f6f;
+}
+nav a h1{
+	color: #717171;
+	font-family: fantasy;
+	font-size: 40px;
+}
+nav .onglets{
+	margin-top: 4px;
+	margin-left: 400px;
+}
+nav .onglets a{
+	text-decoration: none;
+	color: #000;
+	margin-right: 20px;
+	border-bottom: 1px solid #000;
+	padding-bottom: 5px;
+}
+header{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	background: url('lou.jpg');
+	background-size: cover;
+	color: #fff;
+	padding: 40px;
+}
+header h1{
+	font-family:fantasy;
+	font-size: 60px;
+}
+header h4 pre{
+	margin-top: -20px;
+	font-size: 20px;
+	text-align: center;
+	border-bottom: 1px dashed #fff;
+}
+header button{
+	padding: 10px 20px;
+	background-color: white;
+	color: #000;
+	border: none;
+	font-size: 20px;
+	font-family:fantasy;
+	outline: none;
+	cursor: pointer;
+}
+
+
+.division{
+	margin-top: 40px;
+	display:flex;
+	flex-direction: column;
+	align-items:center;
+}
+.division .content .card{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	margin-bottom: 20px;
+}
+.division .content .card .left{
+	flex: 0 0 30%;
+	padding: 20px;
+	background-color: black;
+	color: #fff;
+}
+.division .content .card.right{
+	flex: 0 0 70%;
+}
+.division .content .card .right img{
+	height: 300px;
+	width: 400px;
+	margin-top: 5px;
+	
+}
+footer{
+	margin-top: 40px;
+	border-top: 5px solid #6f6f6f;
+	background-color: #000;
+	color: #fff;
+	padding: 30px 100px;
+}
+footer h1{
+	font-family: time new roman;
+	border-bottom: 2px solid #fff;
+	width: 16%;
+	padding-bottom: 3px;
+}
+footer .services{
+	margin-top: -10px;
+	display:flex;
+	flex-wrap: wrap;
+}
+footer .services .service{
+	margin-right: 30px;
+	/padding: 10px;*/
+}
+footer .services .service p{
+		max-width: 300px;
+}
+footer #contact{
+	color: rgb(181, 181, 181);
+}
+@media screen and (max-width:600px){
+	nav .onglets{
+		margin-left: 0px;
+		margin-bottom: 20px;
+	}
+	.division .card{
+		margin: 10px;
+	}
+	.division .content .card .right img{
+		height: 200px;
+		width: 100%;
+		margin-top: 0px;
+	}
+	.division .content .card{
+		display: block;
+	}
+	footer{
+		padding: 30px;
+	}
+}
